@@ -1,0 +1,10 @@
+vibeship-skills/
+results/
+__pycache__/
+*.pyc
+.venv/
+errors.md
+.DS_Store
+.idea/
+.vscode/
+.agent/
