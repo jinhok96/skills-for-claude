@@ -1,6 +1,6 @@
 {
   "name": "@jinhok96/skills-for-claude",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Install Claude Code skills from a library of 462+ production-grade AI skills",
   "type": "module",
   "bin": {
