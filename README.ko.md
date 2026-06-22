@@ -11,16 +11,33 @@
 
 ## 빠른 시작
 
-1.  `skills` 폴더에서 원하는 스킬 디렉토리를 Claude Code의 skills 디렉토리에 복사합니다:
-    -   전역 (모든 프로젝트): `~/.claude/skills/`
-    -   프로젝트별: `.claude/skills/`
+인터랙티브 설치 도구를 실행하고 원하는 스킬을 선택하세요:
 
-    예시 — `accessibility` 스킬을 전역으로 추가하는 경우:
-    ```bash
-    cp -r skills/accessibility ~/.claude/skills/
-    ```
+```bash
+npx skills-for-claude
+```
 
-2.  완료! Claude가 대화 내용과 관련이 있다고 판단하면 자동으로 스킬을 활성화하거나, `/skill-name` 형식으로 직접 호출할 수도 있습니다 (예: `/accessibility`). 자세한 내용은 [Claude Code Skills 공식 문서](https://docs.anthropic.com/en/docs/claude-code/slash-commands)를 참고하세요.
+방향키와 Space로 선택하고, 텍스트를 입력해 목록을 필터링할 수 있습니다. Enter를 누르면 설치됩니다. 기본적으로 `~/.claude/skills/`에 설치되어 모든 프로젝트에서 사용할 수 있습니다.
+
+현재 프로젝트에만 설치하려면:
+
+```bash
+npx skills-for-claude --local
+```
+
+설치 후 Claude가 대화 내용과 관련이 있다고 판단하면 자동으로 스킬을 활성화하거나, `/skill-name` 형식으로 직접 호출할 수도 있습니다 (예: `/accessibility`). 자세한 내용은 [Claude Code Skills 공식 문서](https://docs.anthropic.com/en/docs/claude-code/slash-commands)를 참고하세요.
+
+### 수동 설치
+
+직접 복사해서 설치할 수도 있습니다:
+
+```bash
+# 전역
+cp -r skills/accessibility ~/.claude/skills/
+
+# 프로젝트별
+cp -r skills/accessibility .claude/skills/
+```
 
 ## 출처 및 품질
 

@@ -11,16 +11,33 @@ These skills provide Claude with specialized, production-grade knowledge across 
 
 ## Fast Start
 
-1.  Copy the skill directories you want from the `skills` folder into your Claude Code skills directory:
-    -   Global (all projects): `~/.claude/skills/`
-    -   Project-specific: `.claude/skills/`
+Run the interactive installer and pick the skills you want:
 
-    For example, to add the `accessibility` skill globally:
-    ```bash
-    cp -r skills/accessibility ~/.claude/skills/
-    ```
+```bash
+npx skills-for-claude
+```
 
-2.  That's it! Claude will automatically use these skills when relevant to your conversation, or you can invoke one directly with `/skill-name` (e.g., `/accessibility`). For more information, see the [Claude Code Skills Documentation](https://docs.anthropic.com/en/docs/claude-code/slash-commands).
+Use arrow keys and Space to select, type to filter the list, then Enter to install. Skills are installed to `~/.claude/skills/` by default (available in all projects).
+
+To install into the current project only:
+
+```bash
+npx skills-for-claude --local
+```
+
+Once installed, Claude will automatically use a skill when relevant to your conversation, or you can invoke one directly with `/skill-name` (e.g., `/accessibility`). For more information, see the [Claude Code Skills Documentation](https://docs.anthropic.com/en/docs/claude-code/slash-commands).
+
+### Manual installation
+
+If you prefer, copy skill directories directly:
+
+```bash
+# Global
+cp -r skills/accessibility ~/.claude/skills/
+
+# Project-specific
+cp -r skills/accessibility .claude/skills/
+```
 
 ## Origin & Quality
 
