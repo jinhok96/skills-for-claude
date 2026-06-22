@@ -137,7 +137,7 @@ def yaml_to_md(yaml_obj, level=0):
     return result
 
 def convert_skill(category, skill_name):
-    """Converts a Vibeship skill to Antigravity SKILL.md"""
+    """Converts a Vibeship skill to Claude Code SKILL.md"""
     source_dir = SKILLS_DIR / category / skill_name
     target_dir = AGENT_SKILLS_DIR / skill_name
     reference_dir = target_dir / "references"
