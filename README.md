@@ -1,5 +1,7 @@
 # Skills Library for Claude Code
 
+[한국어](README.ko.md)
+
 A comprehensive collection of **462+ AI Skills** for [Claude Code](https://claude.ai/code), ready to drop into your workspace.
 
 These skills provide Claude with specialized, production-grade knowledge across domains like:
@@ -14,7 +16,7 @@ These skills provide Claude with specialized, production-grade knowledge across 
 Run the interactive installer and pick the skills you want:
 
 ```bash
-npx skills-for-claude
+npx @jinhok96/skills-for-claude
 ```
 
 Use arrow keys and Space to select, type to filter the list, then Enter to install. Skills are installed to `~/.claude/skills/` by default (available in all projects).
@@ -22,7 +24,7 @@ Use arrow keys and Space to select, type to filter the list, then Enter to insta
 To install into the current project only:
 
 ```bash
-npx skills-for-claude --local
+npx @jinhok96/skills-for-claude --local
 ```
 
 Once installed, Claude will automatically use a skill when relevant to your conversation, or you can invoke one directly with `/skill-name` (e.g., `/accessibility`). For more information, see the [Claude Code Skills Documentation](https://docs.anthropic.com/en/docs/claude-code/slash-commands).

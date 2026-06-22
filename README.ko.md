@@ -1,5 +1,7 @@
 # Claude Code용 Skills 라이브러리
 
+[English](README.md)
+
 [Claude Code](https://claude.ai/code)에서 바로 사용할 수 있는 **462개 이상의 AI Skills** 모음입니다.
 
 이 스킬들은 Claude에게 다양한 도메인의 전문 지식을 제공합니다:
@@ -14,7 +16,7 @@
 인터랙티브 설치 도구를 실행하고 원하는 스킬을 선택하세요:
 
 ```bash
-npx skills-for-claude
+npx @jinhok96/skills-for-claude
 ```
 
 방향키와 Space로 선택하고, 텍스트를 입력해 목록을 필터링할 수 있습니다. Enter를 누르면 설치됩니다. 기본적으로 `~/.claude/skills/`에 설치되어 모든 프로젝트에서 사용할 수 있습니다.
@@ -22,7 +24,7 @@ npx skills-for-claude
 현재 프로젝트에만 설치하려면:
 
 ```bash
-npx skills-for-claude --local
+npx @jinhok96/skills-for-claude --local
 ```
 
 설치 후 Claude가 대화 내용과 관련이 있다고 판단하면 자동으로 스킬을 활성화하거나, `/skill-name` 형식으로 직접 호출할 수도 있습니다 (예: `/accessibility`). 자세한 내용은 [Claude Code Skills 공식 문서](https://docs.anthropic.com/en/docs/claude-code/slash-commands)를 참고하세요.
