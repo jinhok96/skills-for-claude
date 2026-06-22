@@ -8,3 +8,5 @@ errors.md
 .idea/
 .vscode/
 .agent/
+node_modules/
+package-lock.json

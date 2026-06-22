@@ -1,0 +1,27 @@
+{
+  "name": "skills-for-claude",
+  "version": "1.0.0",
+  "description": "Install Claude Code skills from a library of 462+ production-grade AI skills",
+  "type": "module",
+  "bin": {
+    "skills-for-claude": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "skills/"
+  ],
+  "dependencies": {
+    "@inquirer/checkbox": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skills",
+    "ai",
+    "anthropic"
+  ],
+  "license": "Apache-2.0"
+}
